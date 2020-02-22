@@ -5,7 +5,7 @@ int main()
 {
     Window window;
 
-    window.createWindow();
+    window.createWindow(1600, 600);
 
     while (!window.isCloseRequested()) {
        window.update();
