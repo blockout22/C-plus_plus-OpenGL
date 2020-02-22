@@ -57,9 +57,13 @@ public:
 
 	//can be called each frame and will attempt to update at the specified frames per second
 	void sync(int target_fps) {
-		if (target_fps <= 0) {
+		if (target_fps <= 10) {
 			return;
 		}
+
+		while (glfwGetTime() < fpsLimitTime + 1.0 / target_fps) {
+		}
+		fpsLimitTime += 1.0 / target_fps;
 	}
 
 	void setTitle(const char* title) {
@@ -85,6 +89,7 @@ private:
 	int width;
 	int height;
 	double lastTime;
+	double fpsLimitTime;
 	int fps = 0;
 	std::stringstream fpsString;
 
