@@ -40,3 +40,9 @@ Launcher/.vs/Launcher/v16/.suo
 *.ilk
 *.log
 *.idb
+
+Dependencies/
+Launcher/Debug/Launcher.vcxproj.FileListAbsolute.txt
+*.vcxproj
+Launcher/Launcher.vcxproj
+*.filters

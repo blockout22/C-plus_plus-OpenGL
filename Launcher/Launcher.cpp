@@ -1,6 +1,16 @@
 #include <iostream>
+#include "Window.cpp"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Window window;
+
+    window.createWindow();
+
+    while (!window.isCloseRequested()) {
+       window.update();
+    }
+
+    window.close();
+    
 }
