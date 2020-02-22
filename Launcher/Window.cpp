@@ -1,4 +1,5 @@
 #include <iostream>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 class Window {
@@ -19,10 +20,14 @@ public:
 		}
 
 		glfwMakeContextCurrent(window);
+		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		glfwShowWindow(window);
+		glViewport(0, 0, 800, 600);
+		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
 	}
 
 	bool isCloseRequested() {
+		glClear(GL_COLOR_BUFFER_BIT);
 
 		return glfwWindowShouldClose(window);
 	};

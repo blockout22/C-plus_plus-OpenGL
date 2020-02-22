@@ -107,7 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\kie\Documents\Github\C-plus_plus-OpenGL\Launcher\Dependencies\glfw-3.3.2.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kie\Documents\Github\C-plus_plus-OpenGL\Launcher\Dependencies\GLAD\include;C:\Users\kie\Documents\Github\C-plus_plus-OpenGL\Launcher\Dependencies\glfw-3.3.2.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dependencies\GLAD\src\glad.c" />
     <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="Window.cpp" />

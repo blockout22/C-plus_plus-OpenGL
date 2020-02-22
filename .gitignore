@@ -46,3 +46,5 @@ Launcher/Debug/Launcher.vcxproj.FileListAbsolute.txt
 *.vcxproj
 Launcher/Launcher.vcxproj
 *.filters
+Launcher/x64/Debug/Launcher.vcxproj.FileListAbsolute.txt
+Launcher/Launcher.vcxproj
