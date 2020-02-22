@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+*.tlog
+*.user
+*.pdb
+*.db
+*.opendb
+*.ipch
+Launcher/.vs/Launcher/v16/.suo
+*.ilk
+*.log
+*.idb
